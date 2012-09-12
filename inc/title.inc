@@ -1,0 +1,1 @@
+                       &nbsp;<BR> 			<IMG SRC="images/aikiweb_06.gif" WIDTH=658 HEIGHT=118 ALT="The Harvard Aikido Club">
