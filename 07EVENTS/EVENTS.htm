@@ -1,227 +1,150 @@
+<!doctype html>
 <html>
 <head>
-<!-- TemplateBeginEditable name="doctitle" -->
 <title>Harvard Aikikai</title>
-<!-- TemplateEndEditable --> 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<script language="JavaScript" type="text/JavaScript">
-<!--
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+<style>
+body {
+  background: rgb(204, 204, 153);
+  color: black;
+}
+#frame {
+  background: white;
+  color: black;
+  width: 802px; margin: 0 auto;
+  font-family: Garamond sans-serif;
 }
 
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+#content { padding: 10px 50px; }
+
+ul.header {
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+}
+.header li {
+  list-style-type: none;
+  display: block;
+}
+.header a {
+  float: left;
+  width: 93px;
+  height: 26px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
+#link-home { width: 93px; background: url(../Basic%20Layout/NavTop/images/navtop_OFF_01.gif); }
+#link-home:hover { background: url(../Basic%20Layout/NavTop/images/navtop_ON_01.gif); }
+#link-aikido { width: 102px; background: url(../Basic%20Layout/NavTop/images/navtop_OFF_02.gif);}
+#link-aikido:hover { background: url(../Basic%20Layout/NavTop/images/navtop_ON_02.gif);}
+#link-about { width: 122px; background: url(../Basic%20Layout/NavTop/images/navtop_OFF_03.gif);}
+#link-about:hover { background: url(../Basic%20Layout/NavTop/images/navtop_ON_03.gif);}
+#link-instructors { width: 143px; background: url(../Basic%20Layout/NavTop/images/navtop_OFF_04.gif);}
+#link-instructors:hover { background: url(../Basic%20Layout/NavTop/images/navtop_ON_04.gif);}
+#link-officers { width: 114px; background: url(../Basic%20Layout/NavTop/images/navtop_OFF_05.gif);}
+#link-officers:hover { background: url(../Basic%20Layout/NavTop/images/navtop_ON_05.gif);}
+#link-sched { width: 127px; background: url(../Basic%20Layout/NavTop/images/navtop_OFF_06.gif);}
+#link-sched:hover { background: url(../Basic%20Layout/NavTop/images/navtop_ON_06.gif);}
+#link-events { width: 101px; background: url(../Basic%20Layout/NavTop/images/navtop_OFF_07.gif);}
+#link-events:hover { background: url(../Basic%20Layout/NavTop/images/navtop_ON_07.gif);}
 
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-//-->
-</script>
-<!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+#link-photos { width: 102px; background: url(../Basic%20Layout/NavBottom/images/navbottom_ON_01.gif);}
+#link-glossary { width: 111px; background: url(../Basic%20Layout/NavBottom/images/navbottom_ON_02.gif);}
+#link-library { width: 92px; background: url(../Basic%20Layout/NavBottom/images/navbottom_ON_03.gif);}
+#link-kyu { width: 169px; background: url(../Basic%20Layout/NavBottom/images/navbottom_ON_04.gif);}
+#link-nafudakake { width: 135px; background: url(../Basic%20Layout/NavBottom/images/navbottom_ON_05.gif);}
+#link-links { width: 83px; background: url(../Basic%20Layout/NavBottom/images/navbottom_ON_06.gif);}
+#link-contact { width: 110px; background: url(../Basic%20Layout/NavBottom/images/navbottom_ON_07.gif);}
+
+#link-photos:hover { background: url(../Basic%20Layout/NavBottom/images/navbottom_OFF_01.gif);}
+#link-glossary:hover { background: url(../Basic%20Layout/NavBottom/images/navbottom_OFF_02.gif);}
+#link-library:hover { background: url(../Basic%20Layout/NavBottom/images/navbottom_OFF_03.gif);}
+#link-kyu:hover { background: url(../Basic%20Layout/NavBottom/images/navbottom_OFF_04.gif);}
+#link-nafudakake:hover { background: url(../Basic%20Layout/NavBottom/images/navbottom_OFF_05.gif);}
+#link-links:hover { background: url(../Basic%20Layout/NavBottom/images/navbottom_OFF_06.gif);}
+#link-contact:hover { background: url(../Basic%20Layout/NavBottom/images/navbottom_OFF_07.gif);}
+
+#footer { font-size: 10px; text-align: center; }
+dt { font-weight: bold; }
+dd { margin-bottom: 1em; }
+
+</style>
 </head>
 
-<body onLoad="MM_preloadImages('../01HOME/Nav%20Buttons/KECKHOME_t1-on.gif','../01HOME/Nav%20Buttons/WHATSNEW_t1-ON.gif','../Basic%20Layout/NavTop/images/navtop_ON_01.gif','../Basic%20Layout/NavTop/images/navtop_ON_02.gif','../Basic%20Layout/NavTop/images/navtop_ON_03.gif','../Basic%20Layout/NavTop/images/navtop_ON_04.gif','../Basic%20Layout/NavTop/images/navtop_ON_05.gif','../Basic%20Layout/NavTop/images/navtop_ON_06.gif','../Basic%20Layout/NavTop/images/navtop_ON_07.gif','../Basic%20Layout/NavBottom/images/navbottom_ON_01.gif','../Basic%20Layout/NavBottom/images/navbottom_ON_02.gif','../Basic%20Layout/NavBottom/images/navbottom_ON_03.gif','../Basic%20Layout/NavBottom/images/navbottom_ON_04.gif','../Basic%20Layout/NavBottom/images/navbottom_ON_05.gif','../Basic%20Layout/NavBottom/images/navbottom_ON_06.gif','../Basic%20Layout/NavBottom/images/navbottom_ON_07.gif')" BACKGROUND="../01HOME/bg2.gif">
-<STYLE type="text/css">
-   
-BODY { 
-  background: url("../Basic%20Layout/backg.gif");
-  background-repeat: repeat;
-  background-position: center;
-}
+<body>
 
- </STYLE> 
- 
+  <div id="frame">
+    <img alt="Harvard Aikikai: Aikido at Harvard University" src="../Basic%20Layout/header.gif" width="802" height="64">
+    <ul class="header">
+      <li><a id="link-home" href="../01HOME/HOME.htm">HOME</a>
+      <li><a id="link-aikido" href="../02AIKIDO/AIKIDO.htm">AIKIDO</a>
+      <li><a id="link-about" href="../03ABOUT%20US/ABOUT%20US.htm">ABOUT US</a>
+      <li><a id="link-instructors" href="../04INSTRUCTORS/INSTRUCTORS.htm">INSTRUCTORS</a>
+      <li><a id="link-officers" href="../05OFFICERS/Officers.htm">OFFICERS</a>
+      <li><a id="link-sched" href="../06SCHEDULE/SCHEDULE.htm">SCHEDULE</a>
+      <li><a id="link-events" href="EVENTS.htm">EVENTS</a>
+    </ul>
+    <img src="events.jpg" width="802" height="302"></td>
+    <ul class="header">
+      <li><a id="link-photos" href="../10PHOTOS/PHOTOS.htm">PHOTOS</a>
+      <li><a id="link-glossary" href="../11GLOSSARY/GLOSSARY.htm">GLOSSARY</a>
+      <li><a id="link-library" href="../12LIBRARY/LIBRARY.htm">LIBRARY</a>
+      <li><a id="link-kyu" href="../13KYU/KYU.htm">KYU REQUIREMENTS</a>
+      <li><a id="link-nafudakake" href="../14NAFUDAKAKE/NAFUDAKAKE.htm">NAFUDAKAKE</a>
+      <li><a id="link-links" href="../15LINKS/LINKS.htm">LINKS</a>
+      <li><a id="link-contact" href="../16CONTACT/CONTACT.htm">CONTACT</a>
+    </ul>
 
+    <div id="content">
+    <h1>Upcoming Events Schedule</h1>
+        <p>We're having regular practice until the end of the year, and will be reserving space for the fall semester in mid-september, with practice resuming soon after that. </p>
+        <p>Each year, we hold annual field trips to the Cornell Aikikai and other seminars, and participate in Arts First at Harvard.  We also hold seminar parties and end-of-year get-togethers.</p>
 
-<table width="802" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff">
-  <!--DWLayoutTable-->
-  <tr> 
-    <td height="64" colspan="4" align="center" valign="top"><div align="center"><img src="../Basic%20Layout/header.gif" width="802" height="64"></div></td>
-  </tr>
-  <tr> 
-    <td height="26" colspan="4" valign="top"><div align="center"><a href="../01HOME/HOME.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','../Basic%20Layout/NavTop/images/navtop_ON_01.gif',1)"><img src="../Basic%20Layout/NavTop/images/navtop_OFF_01.gif" alt="HOME" name="Image6" width="93" height="26" border="0"></a><a href="../02AIKIDO/AIKIDO.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image7','','../Basic%20Layout/NavTop/images/navtop_ON_02.gif',1)"><img src="../Basic%20Layout/NavTop/images/navtop_OFF_02.gif" alt="AIKIDO" name="Image7" width="102" height="26" border="0"></a><a href="../03ABOUT%20US/ABOUT%20US.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','../Basic%20Layout/NavTop/images/navtop_ON_03.gif',1)"><img src="../Basic%20Layout/NavTop/images/navtop_OFF_03.gif" alt="ABOUT US" name="Image8" width="122" height="26" border="0"></a><a href="../04INSTRUCTORS/INSTRUCTORS.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','../Basic%20Layout/NavTop/images/navtop_ON_04.gif',1)"><img src="../Basic%20Layout/NavTop/images/navtop_OFF_04.gif" alt="INSTRUCTORS" name="Image9" width="143" height="26" border="0"></a><a href="../05OFFICERS/Officers.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','../Basic%20Layout/NavTop/images/navtop_ON_05.gif',1)"><img src="../Basic%20Layout/NavTop/images/navtop_OFF_05.gif" alt="OFFICERS" name="Image10" width="114" height="26" border="0"></a><a href="../06SCHEDULE/SCHEDULE.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','../Basic%20Layout/NavTop/images/navtop_ON_06.gif',1)"><img src="../Basic%20Layout/NavTop/images/navtop_OFF_06.gif" alt="SCHEDULE" name="Image11" width="127" height="26" border="0"></a><a href="EVENTS.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','../Basic%20Layout/NavTop/images/navtop_ON_07.gif',1)"><img src="../Basic%20Layout/NavTop/images/navtop_OFF_07.gif" alt="EVENTS" name="Image12" width="101" height="26" border="0"></a></div></td>
-  </tr>
-  <tr> 
-    <td height="302" colspan="4" valign="top"><img src="events.jpg" width="802" height="302"></td>
-  </tr>
-  <tr> 
-    <td height="26" colspan="4" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
-        <!--DWLayoutTable-->
-        <tr> 
-          <td width="802" height="26" valign="top"><div align="center"><a href="../10PHOTOS/PHOTOS.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','../Basic%20Layout/NavBottom/images/navbottom_ON_01.gif',1)"><img src="../Basic%20Layout/NavBottom/images/navbottom_OFF_01.gif" alt="PHOTOS" name="Image13" width="102" height="26" border="0"></a><a href="../11GLOSSARY/GLOSSARY.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image14','','../Basic%20Layout/NavBottom/images/navbottom_ON_02.gif',1)"><img src="../Basic%20Layout/NavBottom/images/navbottom_OFF_02.gif" alt="GLOSSARY" name="Image14" width="111" height="26" border="0"></a><a href="../12LIBRARY/LIBRARY.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image15','','../Basic%20Layout/NavBottom/images/navbottom_ON_03.gif',1)"><img src="../Basic%20Layout/NavBottom/images/navbottom_OFF_03.gif" alt="LIBRARY" name="Image15" width="92" height="26" border="0"></a><a href="../13KYU/KYU.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image16','','../Basic%20Layout/NavBottom/images/navbottom_ON_04.gif',1)"><img src="../Basic%20Layout/NavBottom/images/navbottom_OFF_04.gif" alt="KYU REQUIREMENTS" name="Image16" width="169" height="26" border="0"></a><a href="../14NAFUDAKAKE/NAFUDAKAKE.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image17','','../Basic%20Layout/NavBottom/images/navbottom_ON_05.gif',1)"><img src="../Basic%20Layout/NavBottom/images/navbottom_OFF_05.gif" alt="NAFUDAKAKE" name="Image17" width="135" height="26" border="0"></a><a href="../15LINKS/LINKS.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','../Basic%20Layout/NavBottom/images/navbottom_ON_06.gif',1)"><img src="../Basic%20Layout/NavBottom/images/navbottom_OFF_06.gif" alt="LINKS" name="Image18" width="83" height="26" border="0"></a><a href="../16CONTACT/CONTACT.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','../Basic%20Layout/NavBottom/images/navbottom_ON_07.gif',1)"><img src="../Basic%20Layout/NavBottom/images/navbottom_OFF_07.gif" alt="CONTACT" name="Image19" width="110" height="26" border="0"></a></div></td>
-        </tr>
-      </table></td>
-  </tr>
-  <tr> 
-    <td width="120" height="19">&nbsp;</td>
-    <td width="535">&nbsp;</td>
-    <td width="127">&nbsp;</td>
-    <td width="20"></td>
-  </tr>
-  <tr> 
-    <td height="39" colspan="3" valign="top"><table width="100%" border="0" cellpadding="5" cellspacing="0">
-        <!--DWLayoutTable-->
-        <tr> 
-          <td width="45" height="39">&nbsp;</td>
-          <td width="540" valign="top" bgcolor="#FFFFFF"><div align="left"><strong><font size="+2" face="Garamond"><em>
-              Upcoming Events Schedule</em></font></strong></div></td>
-          <td width="153">&nbsp;</td>
-          <td width="4" valign="top"> <div align="justify"> 
-              <p align="right"> <font size="-1" face="Arial, Helvetica, sans-serif"><strong></strong></font></p>
-            </div></td>
-        </tr>
-      </table></td>
-    <td></td>
-  </tr>
-  <tr> 
-    <td height="139">&nbsp;</td>
-    <td valign="top"><div align="justify"> 
-        <p> <font face="Garamond">We're having regular practice until the end of the year, and will be reserving space for the fall semester in mid-september, with practice resuming soon after that. </font></p>
+    <h2>Past Events</h2
+    <dl>
+      <dt>Spring 2012
+      <dd>Aikido Tests and Spring Seminar led by Bonnie Veysey.  Demo outside. <a href="../10PHOTOS/PHOTOS.htm">Photos here.</a>
 
-        <p> <font face="Garamond">Each year, we hold annual field trips to the Cornell Aikikai and other seminars, and participate in Arts First at Harvard.  We also hold seminar parties and end-of-year get-togethers.</font></p>
+      <dt>Spring 2010:
+      <dd>Aikido Tests and Spring Seminar led by our instructors (posters for <a href="./2010SpringDemoPosters.pdf">seminar</a> and seminar <a href="./2010SpringDemoPartyPosters.pdf">after-party</a>)
 
-      </div></td>
-    <td>&nbsp;</td>
-    <td></td>
-  </tr>
-  <tr> 
-    <td height="41" colspan="3" valign="top"><table width="100%" border="0" cellpadding="5" cellspacing="0">
-        <!--DWLayoutTable-->
-        <tr> 
-          <td width="47" height="41">&nbsp;</td>
-          <td width="411" valign="top"><strong><font size="+2" face="Garamond"><em>Past   Events </em></font></strong></td>
-          <td width="294">&nbsp;</td>
-        </tr>
-      </table></td>
-    <td></td>
-  </tr>
+      <dt>Fall 2009:
+      <dd>
+        Fall Seminar with featured guest instructors Eddie Cunha and TJ Hinrichs Sensei, longtime students of Kanai Sensei, Cornell Aikido Club<br><br>
+        Aikido for Self Defense Workshop in conjunction with the Harvard Office for Sexual Assault Prevention and Response / the Sexual Assault Sexual Harassment program (<a href="sash_aikido_poster.pdf">poster</a>)
 
-  <tr> 
-    <td height="152"></td>
-    <td valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
-        <!--DWLayoutTable-->
-        <tr> <td width="53" height="18" valign="top" align = "justify"><p> <strong><font face="Garamond">
-	Spring 2012:
-	</font></strong></p></td></tr>
-        <tr> <td height="19" valign="top"><blockquote> <p><font face="Garamond">
-	Aikido Tests and Spring Seminar led by Bonnie Veysey.  Demo outside. <a href="../10PHOTOS/PHOTOS.htm">Photos here.</a>
-	</font></p></blockquote></td></tr>
+      <dt>Spring 2009:
+      <dd>Spring Seminar taught by our instructors with featured guest instructor Fabien Sorin Sensei, <em>Sandan</em>, MIT Aikido Club
 
-        <tr> <td width="53" height="18" valign="top" align = "justify"><p> <strong><font face="Garamond">
-	Spring 2010:
-	</font></strong></p></td></tr>
-        <tr> <td height="19" valign="top"><blockquote> <p><font face="Garamond">
-	Aikido Tests and Spring Seminar led by our instructors (posters for <a href="./2010SpringDemoPosters.pdf">seminar</a> and seminar <a href="./2010SpringDemoPartyPosters.pdf">after-party</a>)
-	</font></p></blockquote></td></tr>
+      <dt>Fall 2008:
+      <dd>Foundational Techniques Seminar with featured guest instructor Paul Keelan Sensei, <em>Rokudan</em> <em>Shidoin</em>, New England Aikikai (<a href="Fall08SeminarPoster.jpg">poster</a>)
 
-       <tr> <td width="5" height="18" valign="top" align="justify"><p> <strong><font face="Garamond">
-	Fall 2009:
-	</font></strong></p></td></tr>
-        <tr> <td height="19" valign="top" align="justify"><blockquote> <p><font face="Garamond">
-Fall Seminar with featured guest instructors Eddie Cunha and TJ Hinrichs Sensei, longtime students of Kanai Sensei, Cornell Aikido Club
-	</font></p></blockquote></td></tr>
-        <tr> <td height="19" valign="top" align="justify"><blockquote> <p><font face="Garamond">
-Aikido for Self Defense Workshop in conjunction with the Harvard Office for Sexual Assault Prevention and Response / the Sexual Assault Sexual Harassment program (<a href="sash_aikido_poster.pdf">poster</a>)
-	</font></p></blockquote></td></tr>
+      <dt>Spring 2008:
+      <dd>Spring Seminar with featured guest instructors Don Dickie Sensei, <em>Godan</em> <em>Shidoin</em>, Chief Instructor of Ottawa Aikikai (<a href="2008-Spring-Seminar-Poster-Un-Zen.jpg">poster</a>)
 
-       <tr> <td width="5" height="18" valign="top" align="justify"><p> <strong><font face="Garamond">
-	Spring 2009:
-	</font></strong></p></td></tr>
-        <tr> <td height="19" valign="top" align="justify"><blockquote> <p><font face="Garamond">
-Spring Seminar taught by our instructors with featured guest instructor Fabien Sorin Sensei, <em>Sandan</em>, MIT Aikido Club
-	</font></p></blockquote></td></tr>
+      <dt>Fall 2007:
+      <dd>Fall Seminar with featured guest instructors Bonita Veysey Sensei, <em>Rokudan</em> <em>Shidoin</em>, Chief Instructor of Helderberg Aikido Club in New York, and Carl Fasano Sensei, <em>Sandan</em> <em>Fukoshidoin</em>, Brown-RISD Aikido
 
-       <tr> <td width="5" height="18" valign="top" align="justify"><p> <strong><font face="Garamond">
-	Fall 2008:
-	</font></strong></p></td></tr>
-        <tr> <td height="19" valign="top" align="justify"><blockquote> <p><font face="Garamond">
-Foundational Techniques Seminar with featured guest instructor Paul Keelan Sensei, <em>Rokudan</em> <em>Shidoin</em>, New England Aikikai (<a href="Fall08SeminarPoster.jpg">poster</a>)
-	</font></p></blockquote></td></tr>
+      <dt>Spring 2007:
+      <dd>Spring Seminar with featured guest instructor Jane Ozeki Sensei, <em>Rokudan</em> <em>Shidoin</em>, New York Aikikai
 
-       <tr> <td width="5" height="18" valign="top" align="justify"><p> <strong><font face="Garamond">
-	Spring 2008:
-	</font></strong></p></td></tr>
-        <tr> <td height="19" valign="top" align="justify"><blockquote> <p><font face="Garamond">
-Spring Seminar with featured guest instructors Don Dickie Sensei, <em>Godan</em> <em>Shidoin</em>, Chief Instructor of Ottawa Aikikai (<a href="2008-Spring-Seminar-Poster-Un-Zen.jpg">poster</a>)
-	</font></p></blockquote></td></tr>
+      <dt>Fall 2006:
+      <dd>Fall Seminar with featured guest instructor Dick Stroud Sensei, <em>Rokudan</em> <em>Shihan</em>, Chief Instructor of MIT Aikido Club
 
-<tr> <td width="5" height="18" valign="top" align="justify"><p> <strong><font face="Garamond">
-	Fall 2007:
-	</font></strong></p></td></tr>
-        <tr> <td height="19" valign="top" align="justify"><blockquote> <p><font face="Garamond">
-Fall Seminar with featured guest instructors Bonita Veysey Sensei, <em>Rokudan</em> <em>Shidoin</em>, Chief Instructor of Helderberg Aikido Club in New York, and Carl Fasano Sensei, <em>Sandan</em> <em>Fukoshidoin</em>, Brown-RISD Aikido
-	</font></p></blockquote></td></tr>
+      <dt>Spring 2006:
+      <dd>Spring Seminar with featured guest instructors Irvin Faust Sensei, <em>Rokudan</em> <em>Shidoin</em>, Chief Instructor of Albany Aikido, and Bonita Veysey Sensei, <em>Rokudan</em> <em>Shidoin</em>, Chief Instructor of Helderberg Aikido Club in New York
 
-<tr> <td width="5" height="18" valign="top" align="justify"><p> <strong><font face="Garamond">
-	Spring 2007:
-	</font></strong></p></td></tr>
-        <tr> <td height="19" valign="top" align="justify"><blockquote> <p><font face="Garamond">
-Spring Seminar with featured guest instructor Jane Ozeki Sensei, <em>Rokudan</em> <em>Shidoin</em>, New York Aikikai
-	</font></p></blockquote></td></tr>
+      <dt>Fall 2005:
+      <dd>Fall Seminar with featured guest instructors Bob Whelan Sensei, <em>Godan</em> <em>Shidoin</em>, Shodokan Salem, and Carl Fasano Sensei, <em>Sandan</em> <em>Fukoshidoin</em>, Brown-RISD Aikido
 
-<tr> <td width="5" height="18" valign="top" align="justify"><p> <strong><font face="Garamond">
-	Fall 2006:
-	</font></strong></p></td></tr>
-        <tr> <td height="19" valign="top" align="justify"><blockquote> <p><font face="Garamond">
-Fall Seminar with featured guest instructor Dick Stroud Sensei, <em>Rokudan</em> <em>Shihan</em>, Chief Instructor of MIT Aikido Club
-	</font></p></blockquote></td></tr>
-
-<tr> <td width="5" height="18" valign="top" align="justify"><p> <strong><font face="Garamond">
-	Spring 2006:
-	</font></strong></p></td></tr>
-        <tr> <td height="19" valign="top" align="justify"><blockquote> <p><font face="Garamond">
-Spring Seminar with featured guest instructors Irvin Faust Sensei, <em>Rokudan</em> <em>Shidoin</em>, Chief Instructor of Albany Aikido, and Bonita Veysey Sensei, <em>Rokudan</em> <em>Shidoin</em>, Chief Instructor of Helderberg Aikido Club in New York
-	</font></p></blockquote></td></tr>
-
-<tr> <td width="5" height="18" valign="top" align="justify"><p> <strong><font face="Garamond">
-	Fall 2005:
-	</font></strong></p></td></tr>
-        <tr> <td height="19" valign="top" align="justify"><blockquote> <p><font face="Garamond">
-Fall Seminar with featured guest instructors Bob Whelan Sensei, <em>Godan</em> <em>Shidoin</em>, Shodokan Salem, and Carl Fasano Sensei, <em>Sandan</em> <em>Fukoshidoin</em>, Brown-RISD Aikido 
-	</font></p></blockquote></td></tr>
-        <tr> 
-          <td width="535" height="18" valign="top"><p> <strong><font face="Garamond">Summer 
-              2005:</font></strong></p></td>
-        </tr>
-        <tr> 
-          <td height="19" valign="top"><blockquote> 
-              <p><font face="Garamond"><a href="KAMIZA.htm">Kamiza Construction</a> 
-                with Aikido of Hilo Members (Hilo, Hawaii) </font></p>
-            </blockquote></td>
-        </tr>
-      </table></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td height="17"></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr> 
-    <td height="15" colspan="4" valign="top"><img src="../Basic%20Layout/footer1.gif" width="802" height="15"></td>
-  </tr>
-</table>
-<table width="802" border="0" align="center" cellpadding="0" cellspacing="0">
-  <!--DWLayoutTable-->
-  <tr> 
-    <td width="802" height="13" valign="top"><div align="center"><font size="-2" face="Arial, Helvetica, sans-serif">&copy; 
-        Harvard Aikikai 2001-2011. All Rights Reserved</font></div></td>
-  </tr>
-</table>
+      <dt>Summer 2005:
+      <dd><a href="KAMIZA.htm">Kamiza Construction</a> with Aikido of Hilo Members (Hilo, Hawaii)
+    </dl>
+  </div> <!-- content -->
+  <img src="../Basic%20Layout/footer1.gif" width="802" height="15"></td>
+  <div id="footer">&copy; Harvard Aikikai 2001-2013. All Rights Reserved</div>
+</div> <!-- frame -->
 </body>
 </html>
