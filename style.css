@@ -2,6 +2,7 @@ body {
   background: rgb(204, 204, 153);
   color: black;
 }
+
 #frame {
   background: white;
   color: black;
@@ -11,25 +12,27 @@ body {
 
 #content { padding: 10px 50px; }
 
-ul.header {
+#header img {
+  display: block;
+}
+#header ul {
   overflow: auto;
   margin: 0;
   padding: 0;
 }
-.header li {
+#header li {
   list-style-type: none;
   display: block;
 }
-.header a {
+#header a {
   float: left;
-  width: 93px;
   height: 26px;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
 }
 
-.header a:hover {
+#header a:hover {
   background-position: 0 26px;
 }
 
