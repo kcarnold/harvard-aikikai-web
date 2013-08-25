@@ -53,5 +53,31 @@ body {
 #link-contact { width: 110px; background-image: url(Basic%20Layout/NavBottom/images/navbottom_7.png);}
 
 #footer { font-size: 10px; text-align: center; }
+
 dt { font-weight: bold; }
 dd { margin-bottom: 1em; }
+
+.instructor {
+  overflow: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.instructor img {
+  float: left;
+  border: 1px solid black;
+}
+
+.instructor p {
+  margin-left: 228px;
+  margin-top: 0;
+  text-align: justify;
+}
+
+.instructor.yellow p {
+  background-color: #FFFFCC;
+}
+
+.instructor.blue p {
+  background-color: #9999FF;
+}
