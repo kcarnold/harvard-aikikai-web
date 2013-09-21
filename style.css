@@ -15,16 +15,16 @@ body {
 #header img {
   display: block;
 }
-#header ul {
+.nav {
   overflow: auto;
   margin: 0;
   padding: 0;
 }
-#header li {
+.nav li {
   list-style-type: none;
   display: block;
 }
-#header a {
+.nav a {
   float: left;
   height: 26px;
   text-indent: 100%;
@@ -32,7 +32,7 @@ body {
   overflow: hidden;
 }
 
-#header a:hover {
+.nav a:hover {
   background-position: 0 26px;
 }
 
