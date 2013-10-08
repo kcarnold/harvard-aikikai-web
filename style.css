@@ -57,27 +57,27 @@ body {
 dt { font-weight: bold; }
 dd { margin-bottom: 1em; }
 
-.instructor {
+.instructor, .officer {
   overflow: auto;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
-.instructor img {
+.instructor img, .officer img {
   float: left;
   border: 1px solid black;
 }
 
-.instructor p {
+.instructor p, .officer p {
   margin-left: 228px;
   margin-top: 0;
   text-align: justify;
 }
 
-.instructor.yellow p {
+.instructor.yellow p, .officer.yellow p {
   background-color: #FFFFCC;
 }
 
-.instructor.blue p {
+.instructor.blue p, .officer.blue p {
   background-color: #9999FF;
 }
